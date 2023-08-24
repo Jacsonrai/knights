@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import logo from "../../../assets/logo.png";
 // import { HamburgerIcon } from "../../surfaces/icon";
 import Hamburger from "../../surfaces/icon/hamburgerIcon";
+import Button from "../../input/button";
 const NavBar = () => {
   //state for small-size menu
   const [open, setOpen] = useState(false);
@@ -38,12 +39,14 @@ const NavBar = () => {
         <div className="hidden md:flex md:items-center md:gap-10 lg:gap-32">
           <ul className="flex uppercase gap-10 items-center">
             <li className="cursor-pointer">The war room</li>
-            <li>news</li>
-            <li>reach to us</li>
+            <li className="cursor-pointer">news</li>
+            <li className="cursor-pointer">reach to us</li>
           </ul>
           <ul className="flex uppercase gap-5 items-center">
-            <li>knight login</li>
-            <li>join us</li>
+            <li className=" border-b cursor-pointer">knight login</li>
+            <li>
+              <Button btnLabel={"join us"} btnSize={"small"} />
+            </li>
           </ul>
         </div>
         <div
@@ -86,7 +89,7 @@ const NavBar = () => {
           <li
             className={`p-8 border-b w-screen cursor-pointer opacity-0 transition-all ease-in ${
               open && `opacity-100`
-            }`}
+            } border-b`}
           >
             knightlogin
           </li>
@@ -95,7 +98,7 @@ const NavBar = () => {
               open && `opacity-100`
             } `}
           >
-            join us
+            <Button btnLabel={"join us"} btnSize={"small"} />
           </li>
         </ul>
       </div>
