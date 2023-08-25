@@ -2,7 +2,7 @@ import React from "react";
 
 const Button = ({ btnLabel, btnSize }) => {
   return (
-    <div className="hover:bg-white transition-all ease-in duration-500 cursor-pointer ">
+    <div className="uppercase transition-all duration-500 ease-in cursor-pointer hover:bg-white ">
       <p
         className={
           // eslint-disable-next-line no-mixed-operators

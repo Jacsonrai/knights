@@ -1,14 +1,18 @@
 import React, { useState, useEffect } from "react";
 import logo from "../../../assets/logo.png";
-// import { HamburgerIcon } from "../../surfaces/icon";
-import Hamburger from "../../surfaces/icon/hamburgerIcon";
+//importing svg icon
+import { HamburgerIcon } from "../../surfaces/icon";
+//importing button from custom button
 import Button from "../../input/button";
+import { Link } from "react-router-dom";
+
 const NavBar = () => {
   //state for small-size menu
   const [open, setOpen] = useState(false);
   //state to get inner width
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
-  console.log(open);
+
+  //function to handle window width
   const handleResize = () => {
     setScreenWidth(window.innerWidth);
   };
@@ -29,37 +33,51 @@ const NavBar = () => {
   }, [screenWidth]);
   return (
     <>
-      <div className="bg-pale-black flex text-white justify-between lg:pl-20 lg:pr-20 lg:pt-4 lg:pb-4 pl-10 pr-10 pt-4 pb-4">
-        <div className="flex items-center gap-2 text-lg font-medium">
-          <figure>
-            <img alt="logo" src={logo} className="w-6" />
-          </figure>
-          <p className="uppercase">knights</p>
-        </div>
+      <div className="flex items-center justify-between pt-4 pb-4 pl-10 pr-10 text-white bg-pale-black lg:pl-32 lg:pr-32 lg:pt-4 lg:pb-4">
+        <Link to={"/"}>
+          <div className="flex items-center gap-2 text-lg font-medium">
+            <figure>
+              <img alt="logo" src={logo} className="w-6" />
+            </figure>
+            <p className="uppercase">knights</p>
+          </div>
+        </Link>
+
         <div className="hidden md:flex md:items-center md:gap-10 lg:gap-32">
-          <ul className="flex uppercase gap-10 items-center">
-            <li className="cursor-pointer">The war room</li>
-            <li className="cursor-pointer">news</li>
-            <li className="cursor-pointer">reach to us</li>
+          <ul className="flex items-center gap-5 uppercase">
+            <Link to={"/"}>
+              <li className="cursor-pointer">The war room</li>
+            </Link>
+            <Link to={"/news"}>
+              <li className="cursor-pointer">news</li>
+            </Link>
+            <Link to={"/contact"}>
+              <li className="cursor-pointer">reach to us</li>
+            </Link>
           </ul>
-          <ul className="flex uppercase gap-5 items-center">
-            <li className=" border-b cursor-pointer">knight login</li>
+          <ul className="flex items-center gap-5 uppercase">
+            <Link to={"/login"}>
+              <li className="border-b cursor-pointer ">knight login</li>
+            </Link>
+
             <li>
               <Button btnLabel={"join us"} btnSize={"small"} />
             </li>
           </ul>
         </div>
         <div
-          className="md:hidden cursor-pointer"
+          className="cursor-pointer md:hidden"
           onClick={() => setOpen(!open)}
         >
-          <Hamburger color="white" width={40} height={40} />
+          <HamburgerIcon color="white" width={40} height={40} />
         </div>
       </div>
 
-      <div className=" bg-pale-black text-white uppercase">
+      <div className="overflow-hidden text-white uppercase ">
         <ul
-          className={`flex justify-center flex-col text-center text-xl absolute z-[1] top-[-500px] transition-all ease-in 
+          className={`flex flex-col bg-pale-black ${
+            open && `h-screen`
+          }  text-center text-xl absolute z-[2] top-[-500px] transition-all ease-in 
           ${open ? `duration-500` : `duration-0`} 
           ${open ? `opacity-100` : `opacity-0`} 
           ${open && `top-[50px]`}

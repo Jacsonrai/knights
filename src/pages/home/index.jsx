@@ -1,7 +1,9 @@
 import React from "react";
+//layout imported from home
+import HomeLayout from "./homeLayout";
 
 const Home = () => {
-  return <div className="bg-pale-black min-h-screen">Home</div>;
+  return <HomeLayout />;
 };
 
 export default Home;
