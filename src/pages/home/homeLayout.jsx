@@ -107,52 +107,52 @@ const HomeLayout = () => {
         <h4 className="text-2xl text-center text-white uppercase ">
           Where is the titanaires
         </h4>
-        <div className="lg:grid lg:grid-cols-2 ">
+        <div className="lg:grid lg:grid-cols-2 lg:pl-20 lg:pr-20">
           <div>
             <h6 className="pb-2 text-2xl font-semibold text-center text-white md:text-left">
               We are everywere!
             </h6>
-            <p className="pl-2 pr-2 text-center text-white md:text-left ">
+            <p className="pl-2 pr-2 text-center text-white md:text-left lg:pb-4 lg:pt-4 lg:pl-0 lg:w-[30rem] ">
               The globalization of the world has made it critical to be a part
               of a world-spanning network.
             </p>
 
-            <div className="pt-4">
+            <div className="pt-4 lg:w-[30rem]">
               <div className="relative rounded-sm shadow bg-pale-gray ">
                 <figure>
                   <img
                     src={horse}
                     alt="horse"
-                    className="absolute right-[-0.5rem] top-4"
+                    className="absolute right-[-0.5rem] top-4 lg:top-[-0.5rem] lg:right-[-2rem]"
                   />
                 </figure>
                 <figure>
                   <img
                     src={star}
                     alt="star"
-                    className="absolute right-20 top-12"
+                    className="absolute right-20 top-12 lg:top-1 md:top-1"
                   />
                 </figure>
                 <div className="p-6">
-                  <h4 className="text-3xl font-bold tracking-wider text-white w-[15rem] md:w-1/2 lg:w-[20rem] xl:w-[25rem] ">
+                  <h4 className="text-3xl font-bold tracking-wider text-white md:w-[30rem]  lg:w-[20rem] xl:w-[25rem] ">
                     Subscribe to Community Club Weekly
                   </h4>
-                  <p className="pt-10 text-white md:w-1/2 lg:w-[20rem] xl:w-[30rem]">
+                  <p className="pt-10 text-white  lg:w-[23rem] md:w-[40rem]">
                     Get the coolest content in community delivered to your
                     inbox.From engagement to moderation, support to strategy -
                     we’ve got you covered. Puns included, free of charge.
                   </p>
                 </div>
                 <div>
-                  <div className="flex flex-col items-center p-2 md:flex md:flex-row md:pl-6">
+                  <div className="flex flex-col items-center p-2 lg:flex lg:flex-row lg:pl-6">
                     <div>
                       <input
                         placeholder="Your email address"
-                        className="p-4 outline-none rounded-t-md text-md text-pale-gray md:rounded-l-md md:rounded-tr-none"
+                        className="p-4 outline-none md:w-[40rem] w-[20rem] rounded-t-md text-md text-pale-gray lg:rounded-l-md lg:rounded-tr-none lg:w-[15rem]"
                       />
                     </div>
                     <div className="shadow drop-shadow-lg ">
-                      <p className="pt-4 pb-4 font-semibold text-center text-white uppercase bg-black rounded-b-md md:rounded-bl-none md:rounded-r-md text-md ">
+                      <p className="pt-4 pb-4 font-semibold md:w-[40rem] w-[20rem] lg:w-[10rem] text-center text-white uppercase bg-black rounded-b-md md:rounded-bl-none md:rounded-r-md text-md ">
                         subscribe
                       </p>
                     </div>
