@@ -21,3 +21,69 @@ export const newsData = [
     image: news3,
   },
 ];
+export const socialLinks = [
+  {
+    name: "facebook",
+    link: "",
+  },
+  {
+    name: "twitter",
+    link: "",
+  },
+  {
+    name: "tiktok",
+    link: "",
+  },
+  {
+    name: "instagram",
+    link: "",
+  },
+];
+export const quickLinksData = [
+  [
+    {
+      name: "The War Room",
+      path: "/",
+    },
+    {
+      name: "Knights Login",
+      path: "/login",
+    },
+    {
+      name: "Road Map",
+      path: "",
+    },
+    {
+      name: "Investment Reports",
+      path: "",
+    },
+  ],
+  [
+    {
+      name: "Reach to us",
+      path: "/",
+    },
+    {
+      name: "buy membership",
+      path: "",
+    },
+    {
+      name: "membership help",
+      path: "",
+    },
+  ],
+  [
+    {
+      name: "refund policy",
+      path: "/",
+    },
+    {
+      name: "privacy policy",
+      path: "",
+    },
+    {
+      name: "cookie policy",
+      path: "",
+    },
+  ],
+];

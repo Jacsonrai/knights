@@ -15,8 +15,8 @@ import handleft from "../../assets/handleft.png";
 import handRight from "../../assets/handright.png";
 import pioneers from "../../assets/pioneers_img.png";
 import warRoom from "../../assets/TheWarRoom.png";
-import news1 from "../../assets/news-03-img.png";
 import { ImageCardLabel } from "../../components/surfaces/card/index";
+
 const HomeLayout = (props) => {
   const { newsData } = props;
   console.log(newsData.image);

@@ -112,7 +112,7 @@ const NavBar = () => {
             knightlogin
           </li>
           <li
-            className={`p-8  w-screen opacity-0 transition-all ease-in ${
+            className={`p-8 flex justify-center opacity-0 transition-all ease-in ${
               open && `opacity-100`
             } `}
           >
