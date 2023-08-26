@@ -2,6 +2,7 @@
   "name": "knight",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://jacsonrai.github.io/knight",
   "dependencies": {
     "@testing-library/user-event": "^13.5.0",
     "eslint": "^8.48.0",
@@ -56,6 +57,7 @@
     "@testing-library/jest-dom": "^6.1.2",
     "@testing-library/react": "^14.0.0",
     "babel-jest": "^29.6.4",
+    "gh-pages": "^6.0.0",
     "jest": "^29.6.4",
     "jest-environment-jsdom": "^29.6.4",
     "tailwindcss": "^3.3.3"
