@@ -81,5 +81,5 @@ jobs:
       - name: Deploy App
         uses: JamesIves/github-pages-deploy-action@4.1.5
         with:
-          branch: knights
+          branch: gh-pages
           folder: build
