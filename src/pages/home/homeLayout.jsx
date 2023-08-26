@@ -14,6 +14,9 @@ import knightImage from "../../assets/knight2.png";
 import handleft from "../../assets/handleft.png";
 import handRight from "../../assets/handright.png";
 import pioneers from "../../assets/pioneers_img.png";
+import warRoom from "../../assets/TheWarRoom.png";
+import news1 from "../../assets/news-03-img.png";
+import { ImageCardLabel } from "../../components/surfaces/card/index";
 const HomeLayout = () => {
   return (
     <div className="min-h-screen bg-pale-black">
@@ -224,13 +227,13 @@ const HomeLayout = () => {
       </div>
 
       <div className="mt-20">
-        <h4 className="text-white text-3xl text-center font-semibold pb-6">
+        <h4 className="pb-6 text-3xl font-semibold text-center text-white">
           Who are our members
         </h4>
-        <h6 className="text-white text-center font-medium text-3xl pb-6">
+        <h6 className="pb-6 text-3xl font-medium text-center text-white">
           They were just like you - looking for something more.
         </h6>
-        <p className="text-white text-center">
+        <p className="text-center text-white">
           They found what they are looking for as knights
         </p>
         <div className="flex justify-center p-6">
@@ -240,7 +243,7 @@ const HomeLayout = () => {
         </div>
       </div>
 
-      <div className="mt-10 p-10 flex gap-16 lg:gap-10 justify-center flex-wrap">
+      <div className="flex flex-wrap justify-center gap-16 p-10 mt-10 lg:gap-10">
         <div className="bg-light-gray rounded-sm relative max-w-[25rem] sm:min-h-[10rem]">
           <figure>
             <img
@@ -249,7 +252,7 @@ const HomeLayout = () => {
               className="w-20 absolute top-[-2.5rem] left-[7rem] sm:left-[10rem] lg:top-[5.5rem] lg:left-4 lg:w-28"
             />
           </figure>
-          <p className="text-white pt-12 pl-4 pr-4 pb-4 text-md text-center">
+          <p className="pt-12 pb-4 pl-4 pr-4 text-center text-white text-md">
             “Legends of the Land, heed thine King’s call. Gather thyself at.”
           </p>
         </div>
@@ -262,7 +265,7 @@ const HomeLayout = () => {
               className="w-20 absolute top-[-2.5rem] left-[7rem] sm:left-[10rem] lg:w-28 lg:left-[9rem] lg:top-[-4rem]"
             />
           </figure>
-          <p className="text-white pt-12 pl-4 pr-4 pb-4 text-md text-center">
+          <p className="pt-12 pb-4 pl-4 pr-4 text-center text-white text-md">
             and without exception, each was granted Men of all ages gathered at
             Middangeard, a Trava Knight Armor set, blessed by Viviane power
             through the Lending Pool.
@@ -277,13 +280,13 @@ const HomeLayout = () => {
               className="w-20 absolute top-[-2.5rem] left-[7rem] sm:left-[10rem] lg:w-28  lg:top-[-2rem] lg:left-[21.5rem] "
             />
           </figure>
-          <p className="text-white pt-12 pl-4 pr-4 pb-4 text-md text-center">
+          <p className="pt-12 pb-4 pl-4 pr-4 text-center text-white text-md">
             The new Order of the Holy Knight of Trava was thus formed, and the
             hundred-year Draconic War thus began
           </p>
         </div>
       </div>
-      <div className="w-fit mx-auto my-0 p-2">
+      <div className="p-2 mx-auto my-0 w-fit">
         <Button btnLabel={"join the war room"} btnSize={"small"} />
       </div>
 
@@ -293,7 +296,7 @@ const HomeLayout = () => {
         </h4>
         <div className="lg:flex lg:justify-around lg:pt-20">
           <div className="text-center lg:text-left lg:w-[25rem]">
-            <h6 className="text-white  text-xl font-semibold ">
+            <h6 className="text-xl font-semibold text-white ">
               I want you to understand something.
               <br />
               <br />
@@ -307,7 +310,7 @@ const HomeLayout = () => {
                 <img src={glass} alt="" />
               </figure>
             </div>
-            <p className="text-white  font-bold text-md">
+            <p className="font-bold text-white text-md">
               Whether you are a MAN or a WOMAN DOES NOT matter. What MATTERS is
               whether you are WORTHY or NOT.
               <br />
@@ -315,7 +318,7 @@ const HomeLayout = () => {
               If you had that capability, we’d already know who you are..
             </p>
           </div>
-          <div className="pt-4 lg:pt-0 flex justify-center">
+          <div className="flex justify-center pt-4 lg:pt-0">
             <figure>
               <img
                 src={knightImage}
@@ -327,15 +330,15 @@ const HomeLayout = () => {
         </div>
       </div>
 
-      <div className="md:p-10  lg:p-0  mt-20 ">
+      <div className="mt-20 md:p-10 lg:p-0 ">
         <div className="lg:grid lg:grid-cols-2 lg:w-[80%] lg:mx-auto lg:my-0 lg:gap-10">
           <div className="md:pl-20 md:pr-20">
-            <h4 className="text-center text-white lg:text-left text-2xl font-semibold">
+            <h4 className="text-2xl font-semibold text-center text-white lg:text-left">
               You are left with only two options.
             </h4>
 
-            <div className="relative mt-2 flex justify-start">
-              <p className="text-white border w-fit pt-2 pb-2 rounded-2xl pl-8 pr-8 absolute top-4 md:top-12 lg:text-lg lg:pr-16 lg:pl-16">
+            <div className="relative flex justify-start mt-2">
+              <p className="absolute pt-2 pb-2 pl-8 pr-8 text-white border w-fit rounded-2xl top-4 md:top-12 lg:text-lg lg:pr-16 lg:pl-16">
                 Become worthy spiritually
               </p>
               <figure>
@@ -347,8 +350,8 @@ const HomeLayout = () => {
               </figure>
             </div>
 
-            <div className="relative mt-2 flex justify-end lg:mt-0">
-              <p className="text-white border w-fit pt-2 pb-2 rounded-2xl pl-8 pr-8 absolute top-4 md:top-12 lg:text-lg lg:pr-16 lg:pl-16">
+            <div className="relative flex justify-end mt-2 lg:mt-0">
+              <p className="absolute pt-2 pb-2 pl-8 pr-8 text-white border w-fit rounded-2xl top-4 md:top-12 lg:text-lg lg:pr-16 lg:pl-16">
                 Become worthy financially
               </p>
               <figure>
@@ -361,7 +364,7 @@ const HomeLayout = () => {
             </div>
           </div>
           <div className="lg:w-[30rem] text-center mt-4 md:mx-auto md:my-0 lg:text-left">
-            <h4 className="text-white text-2xl font-semibold">
+            <h4 className="text-2xl font-semibold text-white">
               - Do you have a business generating 20k in revenue a month?
               <br />
               <br />- Do you earn 2k doing a job?
@@ -393,17 +396,17 @@ const HomeLayout = () => {
         </div>
       </div>
 
-      <div className="mt-10 p-2">
-        <h4 className="text-white uppercase text-center text-2xl md:text-3xl">
+      <div className="p-2 mt-10">
+        <h4 className="text-2xl text-center text-white uppercase md:text-3xl">
           FIVE ROAD HEADS.
         </h4>
 
-        <div className="pt-6 flex flex-col justify-around md:flex-row sm:gap-8 md:mt-12 lg:pl-32 lg:pr-32">
+        <div className="flex flex-col justify-around pt-6 md:flex-row sm:gap-8 md:mt-12 lg:pl-32 lg:pr-32">
           <figure>
-            <img src={pioneers} alt="" className="sm:w-full  md:w-fit" />
+            <img src={pioneers} alt="" className="sm:w-full md:w-fit" />
           </figure>
           <div className="text-center p-4 md:p-0 md:text-left md:w-[45rem]">
-            <p className="text-white text-lg ">
+            <p className="text-lg text-white ">
               We have <b>1 billionaires</b> and <b>2 millionaires</b> onboard
               pioneering the community with their mentorship and investments.
               And,
@@ -415,6 +418,50 @@ const HomeLayout = () => {
               (Early bird offers for the first
               <b> 50 pioneering members are available</b>)
             </p>
+          </div>
+        </div>
+      </div>
+
+      <div className="mt-10 lg:mt-28">
+        <div className="relative">
+          <figure>
+            <img
+              src={warRoom}
+              alt=""
+              className="w-full h-[40rem] object-cover lg:object-fill"
+            />
+          </figure>
+          <div className="absolute p-4 text-center text-white top-20 md:p-8 md:w-full md:mx-auto md:my-0">
+            <h4 className="pb-4 text-2xl font-semibold lg:text-3xl">
+              WHAT OUR MEMBER HAVE ACHIEVED.
+            </h4>
+            <p className="text-lg font-medium lg:text-center">
+              These achievements may be a small step for the community
+              <br className="hidden lg:block" /> but a huge milestone in the
+              lives of these members.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div className="flex justify-center mt-10">
+        <div className="p-4 text-white">
+          <h4 className="text-2xl text-center md:text-left">
+            NEWS $ ANNOUNCEMENT
+          </h4>
+          <p className="pt-4 pb-6 text-center md:text-left">
+            We expect future benefits as an investment in the form of a positive
+            return. The return may consist of capital gain and/or investment
+            income, including dividends, interest, rental income etc.
+          </p>
+          <div className="grid gap-10 lg:grid-cols-3 md:grid-cols-2">
+            <ImageCardLabel
+              cardImage={news1}
+              details={
+                "We expect future benefits as an investment in the form of a positive return."
+              }
+              categoryLabel={"Event"}
+            />
           </div>
         </div>
       </div>
