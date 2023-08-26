@@ -17,7 +17,9 @@ import pioneers from "../../assets/pioneers_img.png";
 import warRoom from "../../assets/TheWarRoom.png";
 import news1 from "../../assets/news-03-img.png";
 import { ImageCardLabel } from "../../components/surfaces/card/index";
-const HomeLayout = () => {
+const HomeLayout = (props) => {
+  const { newsData } = props;
+  console.log(newsData.image);
   return (
     <div className="min-h-screen bg-pale-black">
       <div className="relative">
@@ -455,13 +457,16 @@ const HomeLayout = () => {
             income, including dividends, interest, rental income etc.
           </p>
           <div className="grid gap-10 lg:grid-cols-3 md:grid-cols-2">
-            <ImageCardLabel
-              cardImage={news1}
-              details={
-                "We expect future benefits as an investment in the form of a positive return."
-              }
-              categoryLabel={"Event"}
-            />
+            {newsData.length > 0 &&
+              newsData.map((each, i) => (
+                <div key={i}>
+                  <ImageCardLabel
+                    cardImage={each.image}
+                    details={each.description}
+                    categoryLabel={each.category}
+                  />
+                </div>
+              ))}
           </div>
         </div>
       </div>
