@@ -4,6 +4,7 @@ import News from "./pages/news";
 import Contact from "./pages/contact";
 import Login from "./pages/login";
 import NavBar from "./components/shared/navbar";
+import Footer from "./components/shared/footer/FooterLayout";
 const App = () => {
   return (
     <>
@@ -15,6 +16,7 @@ const App = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="/login" element={<Login />} />
       </Routes>
+      <Footer />
     </>
   );
 };

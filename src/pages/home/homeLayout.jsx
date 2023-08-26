@@ -430,7 +430,7 @@ const HomeLayout = (props) => {
             <img
               src={warRoom}
               alt=""
-              className="w-full h-[40rem] object-cover lg:object-fill"
+              className="w-full h-[40rem] object-fill "
             />
           </figure>
           <div className="absolute p-4 text-center text-white top-20 md:p-8 md:w-full md:mx-auto md:my-0">
@@ -453,7 +453,8 @@ const HomeLayout = (props) => {
           </h4>
           <p className="pt-4 pb-6 text-center md:text-left">
             We expect future benefits as an investment in the form of a positive
-            return. The return may consist of capital gain and/or investment
+            return. The return may consist of capital gain and/or investment{" "}
+            <br className="hidden md:block" />
             income, including dividends, interest, rental income etc.
           </p>
           <div className="grid gap-10 lg:grid-cols-3 md:grid-cols-2">

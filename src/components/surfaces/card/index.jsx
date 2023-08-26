@@ -1,2 +1,3 @@
 import ImageCardLabel from "./imageCardLabel";
-export { ImageCardLabel };
+import SocialLinkCard from "./socialCard";
+export { ImageCardLabel, SocialLinkCard };
