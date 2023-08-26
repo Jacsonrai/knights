@@ -1,8 +1,18 @@
 import React from "react";
 import hero from "../../assets/hero.png";
 import Button from "../../components/input/button";
+
+//import statci image from assets
 import horse from "../../assets/horse.png";
 import star from "../../assets/star.png";
+import knight from "../../assets/knight.png";
+import mission from "../../assets/mission-logo.png";
+import vision from "../../assets/vision-logo.png";
+import value from "../../assets/values-logo.png";
+import glass from "../../assets/look.png";
+import knightImage from "../../assets/knight2.png";
+import handleft from "../../assets/handleft.png";
+import handRight from "../../assets/handright.png";
 const HomeLayout = () => {
   return (
     <div className="min-h-screen bg-pale-black">
@@ -103,16 +113,16 @@ const HomeLayout = () => {
         </div>
       </div>
 
-      <div className="p-2 pb-4 mt-8 lg:pl-32 lg:pr-32">
+      <div className="p-2 pb-4 mt-8 ">
         <h4 className="text-2xl text-center text-white uppercase ">
           Where is the titanaires
         </h4>
-        <div className="lg:grid lg:grid-cols-2 lg:pl-20 lg:pr-20">
+        <div className="mt-10 lg:flex lg:justify-around">
           <div>
-            <h6 className="pb-2 text-2xl font-semibold text-center text-white md:text-left">
+            <h6 className="pb-2 text-2xl font-semibold text-center text-white lg:text-left">
               We are everywere!
             </h6>
-            <p className="pl-2 pr-2 text-center text-white md:text-left lg:pb-4 lg:pt-4 lg:pl-0 lg:w-[30rem] ">
+            <p className="pl-2 pr-2 text-center text-white lg:text-left lg:pb-4 lg:pt-4 lg:pl-0 lg:w-[30rem] ">
               The globalization of the world has made it critical to be a part
               of a world-spanning network.
             </p>
@@ -165,9 +175,215 @@ const HomeLayout = () => {
             </div>
           </div>
 
-          <div>
-            <h1>hello</h1>
+          <div className="text-white lg:max-w-[32rem] pt-6 text-center lg:text-left">
+            <p>
+              <strong>
+                Middangeard, where lay the Lending Pool, the lifesource of
+              </strong>
+              <br />
+              Trava Kingdom itself. The brief respite afforded the Kingdom was
+              but fleeting, and the final days drew nigh…
+              <br />
+              <br />
+              In the darkest hours, King Svitanae walked to the Lending Pool,
+              with the Holy Scepter tight in hand. “I summon thee, Goddess of
+              the Pool. Heed my word, and deliver us from inevitable doom. Come,
+              Viviane!”.
+              <br />
+              <br />
+              <strong>
+                A vague silhouette appeared, radiating a bright aura that
+              </strong>
+              <br />
+              shone upon the castle not unlike midsummer noon. The Goddess
+              Viviane appeared, bringing along her solemn voice: “The Champion
+              hath been reincarnated,
+              <br />
+              <br />
+              <strong>
+                At the same moment, an enigmatic voice echoed throughout the
+                Kingdom.
+              </strong>
+              <br />
+              <br />
+              “Legends of the Land, heed thine King’s call. Gather thyself at
+              the <b>Citadel</b>,
+              <br />
+              <br />
+              <b>
+                Want to know how members of your business industry have found
+                applications for AI?
+              </b>
+              <br />
+              <br />
+              Speak to an industry insider who knows the founder.
+            </p>
           </div>
+        </div>
+      </div>
+
+      <div className="mt-20">
+        <h4 className="text-white text-3xl text-center font-semibold pb-6">
+          Who are our members
+        </h4>
+        <h6 className="text-white text-center font-medium text-3xl pb-6">
+          They were just like you - looking for something more.
+        </h6>
+        <p className="text-white text-center">
+          They found what they are looking for as knights
+        </p>
+        <div className="flex justify-center p-6">
+          <figure>
+            <img src={knight} alt="knight" />
+          </figure>
+        </div>
+      </div>
+
+      <div className="mt-10 p-10 flex gap-16 lg:gap-10 justify-center flex-wrap">
+        <div className="bg-light-gray rounded-sm relative max-w-[25rem] sm:min-h-[10rem]">
+          <figure>
+            <img
+              src={mission}
+              alt=""
+              className="w-20 absolute top-[-2.5rem] left-[7rem] sm:left-[10rem] lg:top-[5.5rem] lg:left-4 lg:w-28"
+            />
+          </figure>
+          <p className="text-white pt-12 pl-4 pr-4 pb-4 text-md text-center">
+            “Legends of the Land, heed thine King’s call. Gather thyself at.”
+          </p>
+        </div>
+
+        <div className="bg-light-gray rounded-sm relative max-w-[25rem] sm:min-h-[10rem]">
+          <figure>
+            <img
+              src={vision}
+              alt=""
+              className="w-20 absolute top-[-2.5rem] left-[7rem] sm:left-[10rem] lg:w-28 lg:left-[9rem] lg:top-[-4rem]"
+            />
+          </figure>
+          <p className="text-white pt-12 pl-4 pr-4 pb-4 text-md text-center">
+            and without exception, each was granted Men of all ages gathered at
+            Middangeard, a Trava Knight Armor set, blessed by Viviane power
+            through the Lending Pool.
+          </p>
+        </div>
+
+        <div className="bg-light-gray rounded-sm relative max-w-[25rem] sm:min-h-[10rem]">
+          <figure>
+            <img
+              src={value}
+              alt=""
+              className="w-20 absolute top-[-2.5rem] left-[7rem] sm:left-[10rem] lg:w-28  lg:top-[-2rem] lg:left-[21.5rem] "
+            />
+          </figure>
+          <p className="text-white pt-12 pl-4 pr-4 pb-4 text-md text-center">
+            The new Order of the Holy Knight of Trava was thus formed, and the
+            hundred-year Draconic War thus began
+          </p>
+        </div>
+      </div>
+      <div className="w-fit mx-auto my-0 p-2">
+        <Button btnLabel={"join the war room"} btnSize={"small"} />
+      </div>
+
+      <div className="p-2 mt-16 mb-20">
+        <h4 className="text-white lg:mx-auto lg:my-0 text-center text-2xl pb-2 lg:w-[25rem] uppercase">
+          "Do you feel that you are not ready to become a knight?"
+        </h4>
+        <div className="lg:flex lg:justify-around lg:pt-20">
+          <div className="text-center lg:text-left lg:w-[25rem]">
+            <h6 className="text-white  text-xl font-semibold ">
+              I want you to understand something.
+              <br />
+              <br />
+            </h6>
+            <p className="text-white ">
+              <b>NONE of</b> you are, trust me, if you are, we would know who
+              you are by now. We dare you to try,
+            </p>
+            <div className="flex justify-center pt-8 pb-8 lg:justify-start">
+              <figure>
+                <img src={glass} alt="" />
+              </figure>
+            </div>
+            <p className="text-white  font-bold text-md">
+              Whether you are a MAN or a WOMAN DOES NOT matter. What MATTERS is
+              whether you are WORTHY or NOT.
+              <br />
+              <br />
+              If you had that capability, we’d already know who you are..
+            </p>
+          </div>
+          <div className="pt-4 lg:pt-0 flex justify-center">
+            <figure>
+              <img
+                src={knightImage}
+                alt=""
+                className="lg:w-[30rem] lg:h-[20rem]"
+              />
+            </figure>
+          </div>
+        </div>
+      </div>
+
+      <div className="md:p-10  lg:p-0  mt-20 lg:grid lg:grid-cols-2 lg:w-[80%] lg:mx-auto lg:my-0 lg:gap-10">
+        <div className="md:pl-20 md:pr-20">
+          <h4 className="text-center text-white lg:text-left text-2xl font-semibold">
+            You are left with only two options.
+          </h4>
+
+          <div className="relative mt-2 flex justify-start">
+            <p className="text-white border w-fit pt-2 pb-2 rounded-2xl pl-8 pr-8 absolute top-4 md:top-12 lg:text-lg lg:pr-16 lg:pl-16">
+              Become worthy spiritually
+            </p>
+            <figure>
+              <img
+                src={handleft}
+                alt=""
+                className="h-[10rem] w-[15rem] md:w-[25rem] md:h-[15rem] lg:w-full lg:h-full"
+              />
+            </figure>
+          </div>
+
+          <div className="relative mt-2 flex justify-end lg:mt-0">
+            <p className="text-white border w-fit pt-2 pb-2 rounded-2xl pl-8 pr-8 absolute top-4 md:top-12 lg:text-lg lg:pr-16 lg:pl-16">
+              Become worthy financially
+            </p>
+            <figure>
+              <img
+                src={handRight}
+                alt=""
+                className="h-[10rem] w-[15rem] md:w-[25rem] md:h-[15rem] lg:w-full lg:h-full"
+              />
+            </figure>
+          </div>
+        </div>
+        <div className="lg:w-[36rem] text-center mt-4 md:mx-auto md:my-0 lg:text-left">
+          <h4 className="text-white text-2xl font-semibold">
+            - Do you have a business generating 20k in revenue a month?
+            <br />
+            <br />- Do you earn 2k doing a job?
+            <br />
+            <br />
+          </h4>
+          <p className="text-white">
+            Those two levels of money are so similar, so close to each other,
+            that it’s trivial to say there is ANY difference.
+            <br />
+            <br />
+            Until the prophesied Champion of the Crystal would arrive
+            <br />
+            <br />
+            You think $1 million is impressive?? <br />
+            <br />
+            It is not much money considering the potential of the Knights.{" "}
+            <br />
+            You are NOT worthy and,
+            <br />
+            You are NOT ready.
+            <br />
+            Nobody is Born a Knights, you have to BECOME ONE.
+          </p>
         </div>
       </div>
     </div>
