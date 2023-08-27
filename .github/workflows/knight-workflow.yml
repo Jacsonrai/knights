@@ -45,7 +45,7 @@ jobs:
 
   build-deploy:
     name: Build and Deploy
-    # needs: unit-testing
+    needs: unit-testing
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
