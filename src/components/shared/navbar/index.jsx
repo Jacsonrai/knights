@@ -87,41 +87,54 @@ const NavBar = () => {
           ${open && `top-[50px]`}
           `}
         >
-          <li
-            className={`p-8 border-b w-screen cursor-pointer opacity-0 transition-all ease-in ${
-              open && `opacity-100`
-            }`}
-          >
-            the war room
-          </li>
-          <li
-            className={`p-8 border-b w-screen cursor-pointer opacity-0 transition-all ease-in ${
-              open && `opacity-100`
-            }`}
-          >
-            News
-          </li>
-          <li
-            className={`p-8 border-b w-screen cursor-pointer opacity-0 transition-all ease-in ${
-              open && `opacity-100`
-            }`}
-          >
-            reach to us
-          </li>
-          <li
-            className={`p-8 border-b w-screen cursor-pointer opacity-0 transition-all ease-in ${
-              open && `opacity-100`
-            } border-b`}
-          >
-            knightlogin
-          </li>
-          <li
-            className={`p-8 flex justify-center opacity-0 transition-all ease-in ${
-              open && `opacity-100`
-            } `}
-          >
-            <Button btnLabel={"join us"} btnSize={"small"} />
-          </li>
+          <Link to={"/war-room"}>
+            <li
+              className={`p-8 border-b w-screen cursor-pointer opacity-0 transition-all ease-in ${
+                open && `opacity-100`
+              }`}
+            >
+              the war room
+            </li>
+          </Link>
+
+          <Link to={"/news"}>
+            <li
+              className={`p-8 border-b w-screen cursor-pointer opacity-0 transition-all ease-in ${
+                open && `opacity-100`
+              }`}
+            >
+              News
+            </li>
+          </Link>
+
+          <Link to={"/contact"}>
+            <li
+              className={`p-8 border-b w-screen cursor-pointer opacity-0 transition-all ease-in ${
+                open && `opacity-100`
+              }`}
+            >
+              reach to us
+            </li>
+          </Link>
+
+          <Link to={"/login"}>
+            <li
+              className={`p-8 border-b w-screen cursor-pointer opacity-0 transition-all ease-in ${
+                open && `opacity-100`
+              } border-b`}
+            >
+              knightlogin
+            </li>
+          </Link>
+          <Link to={"/sign-in"}>
+            <li
+              className={`p-8 flex justify-center opacity-0 transition-all ease-in ${
+                open && `opacity-100`
+              } `}
+            >
+              <Button btnLabel={"join us"} btnSize={"small"} />
+            </li>
+          </Link>
         </ul>
       </div>
     </>
