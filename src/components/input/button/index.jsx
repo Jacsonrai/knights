@@ -3,7 +3,8 @@ import React from "react";
 const Button = ({ btnLabel, btnSize }) => {
   return (
     <div className="uppercase transition-all duration-500 ease-in cursor-pointer hover:bg-white w-fit">
-      <p
+      <div
+        data-testid="btnSize"
         className={
           // eslint-disable-next-line no-mixed-operators
           (btnSize === "small" &&
@@ -14,8 +15,8 @@ const Button = ({ btnLabel, btnSize }) => {
             "hover:text-black border pt-2 pb-2 pl-20 pr-20")
         }
       >
-        {btnLabel}
-      </p>
+        <p data-testid="btnLabel"> {btnLabel}</p>
+      </div>
     </div>
   );
 };

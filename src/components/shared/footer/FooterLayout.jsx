@@ -6,7 +6,7 @@ import { SocialLinkCard } from "../../surfaces/card";
 import { Link } from "react-router-dom";
 const FooterLayout = (props) => {
   const { socialLinksData, quickLinksData } = props;
-  console.log(quickLinksData);
+
   return (
     <div className="text-white pt-28 bg-pale-black">
       <div className="lg:grid lg:grid-cols-[minmax(350px,500px)_minmax(100px,200px)_auto] lg:border-t lg:border-b lg:border-pale-gray">
@@ -26,7 +26,7 @@ const FooterLayout = (props) => {
         <div className="flex flex-col pt-8 lg:pt-0">
           {socialLinksData.length > 0 &&
             socialLinksData.map((social, i) => (
-              <div key={i}>
+              <div key={i} data-testid="setlink">
                 <SocialLinkCard cardLabel={social.name} setlink={"/#"} />
               </div>
             ))}
@@ -39,7 +39,7 @@ const FooterLayout = (props) => {
                 <li className="pb-2 text-2xl font-semibold">Community</li>
                 {quickLinksData.length > 0 &&
                   quickLinksData[0].map((link, i) => (
-                    <Link to={link.path}>
+                    <Link to={link.path} data-testid="link">
                       <li className="pb-2 text-lg capitalize" key={i}>
                         {link.name}
                       </li>
@@ -53,7 +53,7 @@ const FooterLayout = (props) => {
                 <li className="pb-2 text-2xl font-semibold">Contact</li>
                 {quickLinksData.length > 0 &&
                   quickLinksData[1].map((link, i) => (
-                    <Link to={link.path}>
+                    <Link to={link.path} data-testid="link1">
                       <li className="pb-2 text-lg capitalize" key={i}>
                         {link.name}
                       </li>
@@ -67,7 +67,7 @@ const FooterLayout = (props) => {
                 <li className="pb-2 text-2xl font-semibold">Legal</li>
                 {quickLinksData.length > 0 &&
                   quickLinksData[2].map((link, i) => (
-                    <Link to={link.path}>
+                    <Link to={link.path} data-testid="link2">
                       <li className="pb-2 text-lg capitalize" key={i}>
                         {link.name}
                       </li>
