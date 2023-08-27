@@ -19,7 +19,7 @@ import { ImageCardLabel } from "../../components/surfaces/card/index";
 
 const HomeLayout = (props) => {
   const { newsData } = props;
-  console.log(newsData.image);
+
   return (
     <div className="min-h-screen bg-pale-black">
       <div className="relative">
@@ -76,7 +76,7 @@ const HomeLayout = (props) => {
       <div>
         <div className="lg:grid lg:grid-cols-2 lg:pb-6 lg:w-[87%] lg:mx-auto lg:my-0">
           <div className="lg:col-start-2">
-            <h3 className="text-2xl text-center text-white uppercase lg:text-left lg:mt-2 lg:mb-2">
+            <h3 className="text-3xl font-[Theblowaregular] text-center text-white uppercase lg:text-left lg:mt-2 lg:mb-2">
               The Knight war room
             </h3>
             <h6 className="text-lg tracking-wide text-center text-white lg:text-left lg:font-semibold">
@@ -120,12 +120,12 @@ const HomeLayout = (props) => {
       </div>
 
       <div className="p-2 pb-4 mt-8 ">
-        <h4 className="text-2xl text-center text-white uppercase ">
+        <h4 className="text-3xl font-[Theblowaregular] text-center text-white uppercase ">
           Where is the titanaires
         </h4>
         <div className="mt-10 lg:flex lg:justify-around">
           <div>
-            <h6 className="pb-2 text-2xl font-semibold text-center text-white lg:text-left">
+            <h6 className="pb-2 font-[Ubuntu-bold] text-2xl font-semibold text-center text-white lg:text-left">
               We are everywere!
             </h6>
             <p className="pl-2 pr-2 text-center text-white lg:text-left lg:pb-4 lg:pt-4 lg:pl-0 lg:w-[30rem] ">
@@ -229,7 +229,7 @@ const HomeLayout = (props) => {
       </div>
 
       <div className="mt-20">
-        <h4 className="pb-6 text-3xl font-semibold text-center text-white">
+        <h4 className="pb-6 text-3xl lg:text-5xl  font-light text-center text-white font-[Theblowaregular] uppercase">
           Who are our members
         </h4>
         <h6 className="pb-6 text-3xl font-medium text-center text-white">
@@ -293,7 +293,7 @@ const HomeLayout = (props) => {
       </div>
 
       <div className="p-2 mt-16 mb-20">
-        <h4 className="text-white lg:mx-auto lg:my-0 text-center text-2xl pb-2 lg:w-[25rem] uppercase">
+        <h4 className="text-white lg:mx-auto lg:my-0 text-center text-2xl pb-2 lg:w-[25rem] font-[Theblowaregular] uppercase lg:text-4xl">
           "Do you feel that you are not ready to become a knight?"
         </h4>
         <div className="lg:flex lg:justify-around lg:pt-20">
@@ -399,7 +399,7 @@ const HomeLayout = (props) => {
       </div>
 
       <div className="p-2 mt-10">
-        <h4 className="text-2xl text-center text-white uppercase md:text-3xl">
+        <h4 className="text-2xl text-center text-white font-[Theblowaregular] uppercase md:text-3xl">
           FIVE ROAD HEADS.
         </h4>
 
@@ -434,7 +434,7 @@ const HomeLayout = (props) => {
             />
           </figure>
           <div className="absolute p-4 text-center text-white top-20 md:p-8 md:w-full md:mx-auto md:my-0">
-            <h4 className="pb-4 text-2xl font-semibold lg:text-3xl">
+            <h4 className="pb-4 text-2xl font-light lg:text-5xl font-[Theblowaregular] uppercase">
               WHAT OUR MEMBER HAVE ACHIEVED.
             </h4>
             <p className="text-lg font-medium lg:text-center">
@@ -448,7 +448,7 @@ const HomeLayout = (props) => {
 
       <div className="flex justify-center mt-10">
         <div className="p-4 text-white">
-          <h4 className="text-2xl text-center md:text-left">
+          <h4 className="text-2xl text-center md:text-left font-[Theblowaregular] uppercase lg:text-3xl">
             NEWS $ ANNOUNCEMENT
           </h4>
           <p className="pt-4 pb-6 text-center md:text-left">

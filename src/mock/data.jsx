@@ -43,7 +43,7 @@ export const quickLinksData = [
   [
     {
       name: "The War Room",
-      path: "/",
+      path: "/war-room",
     },
     {
       name: "Knights Login",
@@ -51,39 +51,39 @@ export const quickLinksData = [
     },
     {
       name: "Road Map",
-      path: "",
+      path: "/",
     },
     {
       name: "Investment Reports",
-      path: "",
+      path: "/report",
     },
   ],
   [
     {
       name: "Reach to us",
-      path: "/",
+      path: "/contact",
     },
     {
       name: "buy membership",
-      path: "",
+      path: "/membership",
     },
     {
       name: "membership help",
-      path: "",
+      path: "/membership",
     },
   ],
   [
     {
       name: "refund policy",
-      path: "/",
+      path: "/policy",
     },
     {
       name: "privacy policy",
-      path: "",
+      path: "/policy",
     },
     {
       name: "cookie policy",
-      path: "",
+      path: "/policy",
     },
   ],
 ];

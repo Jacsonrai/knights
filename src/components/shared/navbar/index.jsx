@@ -39,13 +39,15 @@ const NavBar = () => {
             <figure>
               <img alt="logo" src={logo} className="w-6" />
             </figure>
-            <p className="uppercase">knights</p>
+            <p className="uppercase font-[Theblowaregular] text-2xl font-light">
+              knights
+            </p>
           </div>
         </Link>
 
         <div className="hidden md:flex md:items-center md:gap-10 lg:gap-32">
           <ul className="flex items-center gap-5 uppercase">
-            <Link to={"/"}>
+            <Link to={"/war-room"}>
               <li className="cursor-pointer">The war room</li>
             </Link>
             <Link to={"/news"}>
@@ -61,7 +63,9 @@ const NavBar = () => {
             </Link>
 
             <li>
-              <Button btnLabel={"join us"} btnSize={"small"} />
+              <Link to={"/sign-in"}>
+                <Button btnLabel={"join us"} btnSize={"small"} />
+              </Link>
             </li>
           </ul>
         </div>
@@ -73,11 +77,11 @@ const NavBar = () => {
         </div>
       </div>
 
-      <div className="overflow-hidden text-white uppercase ">
+      <div className={`text-white uppercase`}>
         <ul
-          className={`flex flex-col bg-pale-black ${
-            open && `h-screen`
-          }  text-center text-xl absolute z-[2] top-[-500px] transition-all ease-in 
+          className={`flex flex-col bg-pale-black ${open && `h-screen`}
+         ${open && "overflow-y-hidden"}  
+          text-center text-xl absolute z-[2] top-[-500px] transition-all ease-in 
           ${open ? `duration-500` : `duration-0`} 
           ${open ? `opacity-100` : `opacity-0`} 
           ${open && `top-[50px]`}

@@ -11,12 +11,17 @@ const FooterLayout = (props) => {
     <div className="text-white pt-28 bg-pale-black">
       <div className="lg:grid lg:grid-cols-[minmax(350px,500px)_minmax(100px,200px)_auto] lg:border-t lg:border-b lg:border-pale-gray">
         <div className="text-center lg:text-left md:p-20 lg:w-[30rem]">
-          <div className="flex items-center justify-center gap-2 lg:justify-start">
-            <figure>
-              <img src={logo} alt="" />
-            </figure>
-            <h4 className="text-3xl">TITANAIRES</h4>
-          </div>
+          <Link to={"/"}>
+            <div className="flex items-center justify-center gap-2 lg:justify-start">
+              <figure>
+                <img src={logo} alt="" />
+              </figure>
+              <h4 className="text-3xl font-[Theblowaregular] uppercase">
+                TITANAIRES
+              </h4>
+            </div>
+          </Link>
+
           <p className="pt-4 pl-2 pr-2 text-lg">
             When do they work well, and when do they on us and finally, when do
             we actually need how can we avoid them.

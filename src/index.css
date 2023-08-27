@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@font-face {
+  font-family: "Theblowaregular";
+  src: local("theblowarregular-d91mz"),
+    url("./fonts/theblowarregular-d91mz.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Ubuntu-Bold"; /*Can be any text*/
+  src: local("Ubuntu-Bold"), url("./fonts/Ubuntu-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Ubuntu-Regular"; /*Can be any text*/
+  src: local("Ubuntu-Regular"),
+    url("./fonts/Ubuntu-Regular.ttf") format("truetype");
+}
