@@ -74,8 +74,8 @@ const HomeLayout = (props) => {
       </div>
 
       <div>
-        <div className="lg:grid lg:grid-cols-2 lg:pb-6 lg:w-[87%] lg:mx-auto lg:my-0">
-          <div className="lg:col-start-2">
+        <div className="lg:grid lg:grid-cols-2 lg:pb-6 lg:w-[87%] lg:mx-auto lg:my-0 pl-6 pr-6 ">
+          <div className="lg:col-start-2 ">
             <h3 className="text-3xl font-[Theblowaregular] text-center text-white uppercase lg:text-left lg:mt-2 lg:mb-2">
               The Knight war room
             </h3>
@@ -119,11 +119,11 @@ const HomeLayout = (props) => {
         </div>
       </div>
 
-      <div className="p-2 pb-4 mt-8 ">
+      <div className="p-2 pb-4 mt-8 pl-6 pr-6">
         <h4 className="text-3xl font-[Theblowaregular] text-center text-white uppercase ">
           Where is the titanaires
         </h4>
-        <div className="mt-10 lg:flex lg:justify-around">
+        <div className="mt-10 lg:flex lg:justify-between xl:pr-32 xl:pl-32 lg:pr-20 lg:pl-20 gap-10">
           <div>
             <h6 className="pb-2 font-[Ubuntu-bold] text-2xl font-semibold text-center text-white lg:text-left">
               We are everywere!
@@ -228,7 +228,7 @@ const HomeLayout = (props) => {
         </div>
       </div>
 
-      <div className="mt-20">
+      <div className="mt-20 pl-6 pr-6">
         <h4 className="pb-6 text-3xl lg:text-5xl  font-light text-center text-white font-[Theblowaregular] uppercase">
           Who are our members
         </h4>
@@ -238,20 +238,20 @@ const HomeLayout = (props) => {
         <p className="text-center text-white">
           They found what they are looking for as knights
         </p>
-        <div className="flex justify-center p-6">
+        <div className="flex justify-center pt-6 pr-32 pl-32">
           <figure>
-            <img src={knight} alt="knight" />
+            <img src={knight} alt="knight" className="min-w-[20rem]" />
           </figure>
         </div>
       </div>
 
-      <div className="flex flex-wrap justify-center gap-16 p-10 mt-10 lg:gap-10">
+      <div className="flex flex-wrap justify-around gap-16 p-10 mt-10 lg:gap-10 lg:pr-32 lg:pl-32">
         <div className="bg-light-gray rounded-sm relative max-w-[25rem] sm:min-h-[10rem]">
           <figure>
             <img
               src={mission}
               alt=""
-              className="w-20 absolute top-[-2.5rem] left-[7rem] sm:left-[10rem] lg:top-[5.5rem] lg:left-4 lg:w-28"
+              className="w-20  absolute top-[-2.5rem] left-[7rem] sm:left-[10rem] lg:top-[5.5rem] lg:left-4 lg:w-28"
             />
           </figure>
           <p className="pt-12 pb-4 pl-4 pr-4 text-center text-white text-md">
@@ -259,7 +259,7 @@ const HomeLayout = (props) => {
           </p>
         </div>
 
-        <div className="bg-light-gray rounded-sm relative max-w-[25rem] sm:min-h-[10rem]">
+        <div className="bg-light-gray rounded-sm relative max-w-[25rem] sm:min-h-[10rem] ">
           <figure>
             <img
               src={vision}
@@ -292,11 +292,11 @@ const HomeLayout = (props) => {
         <Button btnLabel={"join the war room"} btnSize={"small"} />
       </div>
 
-      <div className="p-2 mt-16 mb-20">
+      <div className="p-2 mt-16 mb-20 pl-6 pr-6">
         <h4 className="text-white lg:mx-auto lg:my-0 text-center text-2xl pb-2 lg:w-[25rem] font-[Theblowaregular] uppercase lg:text-4xl">
           "Do you feel that you are not ready to become a knight?"
         </h4>
-        <div className="lg:flex lg:justify-around lg:pt-20">
+        <div className="lg:flex lg:justify-between lg:pt-20 lg:pr-32 lg:pl-32 gap-10">
           <div className="text-center lg:text-left lg:w-[25rem]">
             <h6 className="text-xl font-semibold text-white ">
               I want you to understand something.
@@ -332,8 +332,8 @@ const HomeLayout = (props) => {
         </div>
       </div>
 
-      <div className="mt-20 md:p-10 lg:p-0 ">
-        <div className="lg:grid lg:grid-cols-2 lg:w-[80%] lg:mx-auto lg:my-0 lg:gap-10">
+      <div className="mt-20 md:p-10 lg:p-0 pl-6 pr-6">
+        <div className="lg:grid lg:grid-cols-2 lg:w-[90%] lg:mx-auto lg:my-0 lg:gap-10">
           <div className="md:pl-20 md:pr-20">
             <h4 className="text-2xl font-semibold text-center text-white lg:text-left">
               You are left with only two options.
@@ -403,7 +403,7 @@ const HomeLayout = (props) => {
           FIVE ROAD HEADS.
         </h4>
 
-        <div className="flex flex-col justify-around pt-6 md:flex-row sm:gap-8 md:mt-12 lg:pl-32 lg:pr-32">
+        <div className="flex flex-col justify-between pt-6 md:flex-row sm:gap-8 pl-6 pr-6 md:mt-12 md:pr-32 md:pl-32">
           <figure>
             <img src={pioneers} alt="" className="sm:w-full md:w-fit" />
           </figure>
@@ -424,7 +424,7 @@ const HomeLayout = (props) => {
         </div>
       </div>
 
-      <div className="mt-10 lg:mt-28">
+      <div className="mt-10 lg:mt-28 ">
         <div className="relative">
           <figure>
             <img
@@ -433,7 +433,7 @@ const HomeLayout = (props) => {
               className="w-full h-[40rem] object-fill "
             />
           </figure>
-          <div className="absolute p-4 text-center text-white top-20 md:p-8 md:w-full md:mx-auto md:my-0">
+          <div className="absolute p-4 text-center text-white top-20 md:p-8 md:w-full md:mx-auto md:my-0 pl-6 pr-6">
             <h4 className="pb-4 text-2xl font-light lg:text-5xl font-[Theblowaregular] uppercase">
               WHAT OUR MEMBER HAVE ACHIEVED.
             </h4>
@@ -446,7 +446,7 @@ const HomeLayout = (props) => {
         </div>
       </div>
 
-      <div className="flex justify-center mt-10">
+      <div className="flex item-center mt-10 xl:pr-32 xl:pl-32 pl-6 pr-6">
         <div className="p-4 text-white">
           <h4 className="text-2xl text-center md:text-left font-[Theblowaregular] uppercase lg:text-3xl">
             NEWS $ ANNOUNCEMENT

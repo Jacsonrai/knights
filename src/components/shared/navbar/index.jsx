@@ -11,10 +11,12 @@ const NavBar = () => {
   const [open, setOpen] = useState(false);
   //state to get inner width
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+  const [screenHeight, setScreenHeight] = useState(window.innerWidth);
 
   //function to handle window width
   const handleResize = () => {
     setScreenWidth(window.innerWidth);
+    setScreenHeight(window.innerHeight);
   };
 
   useEffect(() => {
@@ -80,7 +82,7 @@ const NavBar = () => {
       <div className={`text-white uppercase`}>
         <ul
           className={`flex flex-col bg-pale-black ${open && `h-screen`}
-         ${open && "overflow-y-hidden"}  
+         
           text-center text-xl absolute z-[2] top-[-500px] transition-all ease-in 
           ${open ? `duration-500` : `duration-0`} 
           ${open ? `opacity-100` : `opacity-0`} 

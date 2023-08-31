@@ -8,9 +8,9 @@ const FooterLayout = (props) => {
   const { socialLinksData, quickLinksData } = props;
 
   return (
-    <div className="text-white pt-28 bg-pale-black">
+    <div className="text-white pt-28 bg-pale-black ">
       <div className="lg:grid lg:grid-cols-[minmax(350px,500px)_minmax(100px,200px)_auto] lg:border-t lg:border-b lg:border-pale-gray">
-        <div className="text-center lg:text-left md:p-20 lg:w-[30rem]">
+        <div className="text-center lg:text-left md:p-20 lg:w-[30rem] ">
           <Link to={"/"}>
             <div className="flex items-center justify-center gap-2 lg:justify-start">
               <figure>
@@ -22,7 +22,7 @@ const FooterLayout = (props) => {
             </div>
           </Link>
 
-          <p className="pt-4 pl-2 pr-2 text-lg">
+          <p className="pt-4 pl-6 pr-6 sm:pl-2 sm:pr-2 text-lg">
             When do they work well, and when do they on us and finally, when do
             we actually need how can we avoid them.
           </p>
@@ -97,8 +97,8 @@ const FooterLayout = (props) => {
         </div>
       </div>
 
-      <div className="border-t md:border-t-0 md:grid md:grid-cols-2 md:pt-4 md:pl-10 md:pr-10 lg:pl-24 lg:pr-24">
-        <div className="flex items-center justify-between gap-2 p-4 capitalize md:justify-end text-pale-gray md:p-0">
+      <div className="border-t md:border-t-0 md:grid md:grid-cols-2 md:pt-4 md:pl-10 md:pr-10 lg:pl-24 lg:pr-24 md:items-center">
+        <div className="flex items-center justify-between gap-2 p-2 capitalize md:justify-end text-pale-gray md:p-0">
           <p>knight portal</p>
           <p>knight policies</p>
           <p>term & conditions</p>

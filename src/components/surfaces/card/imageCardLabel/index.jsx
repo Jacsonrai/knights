@@ -12,11 +12,11 @@ const ImageCardLabel = ({ cardImage, categoryLabel, details, keys }) => {
       </figure>
       <h4
         data-testid="category"
-        className="pt-2 text-2xl font-medium text-gray-500 uppercase lg:text-lg"
+        className="pt-2  text-lg md:text-2xl font-medium text-gray-500 uppercase lg:text-lg"
       >
         {categoryLabel}
       </h4>
-      <p className="text-lg" data-testid="details">
+      <p className="text-md md:text-lg" data-testid="details">
         {details}
       </p>
     </div>
