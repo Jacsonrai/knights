@@ -74,7 +74,7 @@ const HomeLayout = (props) => {
       </div>
 
       <div>
-        <div className="lg:grid lg:grid-cols-2 lg:pb-6 lg:w-[87%] lg:mx-auto lg:my-0 pl-6 pr-6 ">
+        <div className="lg:grid lg:grid-cols-2 lg:pb-6 lg:w-[87%] lg:mx-auto lg:my-0 pl-6 pr-6 md:pl-0 md:pr-0">
           <div className="lg:col-start-2 ">
             <h3 className="text-3xl font-[Theblowaregular] text-center text-white uppercase lg:text-left lg:mt-2 lg:mb-2">
               The Knight war room
@@ -86,7 +86,17 @@ const HomeLayout = (props) => {
           </div>
 
           <div className="p-4 lg:col-start-1 lg:row-start-1 lg:row-span-2">
-            <div className="h-[20rem] bg-black"></div>
+            <div className="h-[20rem] bg-black">
+              <iframe
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/XaI-EOVpDvo?si=rofdTGnjduGBjz2x"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
           </div>
 
           <div className="pl-2 pr-2 lg:pl-0 lg;pr-0">
