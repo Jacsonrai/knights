@@ -129,11 +129,11 @@ const HomeLayout = (props) => {
         </div>
       </div>
 
-      <div className="p-2 pb-4 mt-8 pl-6 pr-6">
+      <div className="p-2 pb-4 mt-8 pl-6 pr-6 xl:pr-32 xl:pl-32">
         <h4 className="text-3xl font-[Theblowaregular] text-center text-white uppercase ">
           Where is the titanaires
         </h4>
-        <div className="mt-10 lg:flex lg:justify-between xl:pr-32 xl:pl-32 lg:pr-20 lg:pl-20 gap-10">
+        <div className="mt-10 lg:flex lg:justify-between   gap-10 lg:pl-16 lg:pr-32">
           <div>
             <h6 className="pb-2 font-[Ubuntu-bold] text-2xl font-semibold text-center text-white lg:text-left">
               We are everywere!
@@ -238,7 +238,7 @@ const HomeLayout = (props) => {
         </div>
       </div>
 
-      <div className="mt-20 pl-6 pr-6">
+      <div className="mt-20 pl-6 pr-6 lg:pl-32 lg:pr-32 ">
         <h4 className="pb-6 text-3xl lg:text-5xl  font-light text-center text-white font-[Theblowaregular] uppercase">
           Who are our members
         </h4>
@@ -248,56 +248,59 @@ const HomeLayout = (props) => {
         <p className="text-center text-white">
           They found what they are looking for as knights
         </p>
-        <div className="flex justify-center pt-6 pr-32 pl-32">
+        <div className="flex justify-center pt-6 lg:pr-16 lg:pl-16">
           <figure>
             <img src={knight} alt="knight" className="min-w-[20rem]" />
           </figure>
         </div>
       </div>
 
-      <div className="flex flex-wrap justify-around gap-16 p-10 mt-10 lg:gap-10 lg:pr-32 lg:pl-32">
-        <div className="bg-light-gray rounded-sm relative max-w-[25rem] sm:min-h-[10rem]">
-          <figure>
-            <img
-              src={mission}
-              alt=""
-              className="w-20  absolute top-[-2.5rem] left-[7rem] sm:left-[10rem] lg:top-[5.5rem] lg:left-4 lg:w-28"
-            />
-          </figure>
-          <p className="pt-12 pb-4 pl-4 pr-4 text-center text-white text-md">
-            “Legends of the Land, heed thine King’s call. Gather thyself at.”
-          </p>
-        </div>
+      <div className="lg:pr-32 lg:pl-32 mt-10">
+        <div className="grid items-center justify-center lg:grid-cols-3 gap-16 p-10  lg:pr-16 lg:pl-16">
+          <div className="bg-light-gray rounded-sm relative max-w-[25rem] sm:min-h-[10rem] lg:min-w-[13rem]">
+            <figure>
+              <img
+                src={mission}
+                alt=""
+                className="w-20  absolute top-[-2.5rem] left-[7rem] sm:left-[10rem] lg:w-24 lg:top-[7.5rem] lg:left-4 xl:top-[7.5rem] xl:left-4 xl:w-24  2xl:top-[5.5rem] 2xl:left-4 2xl:w-28"
+              />
+            </figure>
+            <p className="pt-12 pb-4 pl-4 pr-4 text-center text-white text-md">
+              “Legends of the Land, heed thine King’s call. Gather thyself at.”
+            </p>
+          </div>
 
-        <div className="bg-light-gray rounded-sm relative max-w-[25rem] sm:min-h-[10rem] ">
-          <figure>
-            <img
-              src={vision}
-              alt=""
-              className="w-20 absolute top-[-2.5rem] left-[7rem] sm:left-[10rem] lg:w-28 lg:left-[9rem] lg:top-[-4rem]"
-            />
-          </figure>
-          <p className="pt-12 pb-4 pl-4 pr-4 text-center text-white text-md">
-            and without exception, each was granted Men of all ages gathered at
-            Middangeard, a Trava Knight Armor set, blessed by Viviane power
-            through the Lending Pool.
-          </p>
-        </div>
+          <div className="bg-light-gray rounded-sm relative max-w-[25rem] sm:min-h-[10rem] lg:min-w-[13rem]">
+            <figure>
+              <img
+                src={vision}
+                alt=""
+                className="w-20 absolute top-[-2.5rem] left-[7rem] sm:left-[10rem] lg:w-24 lg:left-[4.5rem] xl:w-24 xl:left-[7rem] 2xl:w-28 2xl:left-[9rem] 2xl:top-[-4rem]"
+              />
+            </figure>
+            <p className="pt-12 pb-4 pl-4 pr-4 text-center text-white text-md">
+              and without exception, each was granted Men of all ages gathered
+              at Middangeard, a Trava Knight Armor set, blessed by Viviane power
+              through the Lending Pool.
+            </p>
+          </div>
 
-        <div className="bg-light-gray rounded-sm relative max-w-[25rem] sm:min-h-[10rem]">
-          <figure>
-            <img
-              src={value}
-              alt=""
-              className="w-20 absolute top-[-2.5rem] left-[7rem] sm:left-[10rem] lg:w-28  lg:top-[-2rem] lg:left-[21.5rem] "
-            />
-          </figure>
-          <p className="pt-12 pb-4 pl-4 pr-4 text-center text-white text-md">
-            The new Order of the Holy Knight of Trava was thus formed, and the
-            hundred-year Draconic War thus began
-          </p>
+          <div className="bg-light-gray rounded-sm relative max-w-[25rem] sm:min-h-[10rem] lg:min-w-[15rem]">
+            <figure>
+              <img
+                src={value}
+                alt=""
+                className="w-20 absolute top-[-2.5rem] left-[7rem] sm:left-[10rem] xl:w-24 xl:left-[12rem] 2xl:left-[20rem] "
+              />
+            </figure>
+            <p className="pt-12 pb-4 pl-4 pr-4 text-center text-white text-md">
+              The new Order of the Holy Knight of Trava was thus formed, and the
+              hundred-year Draconic War thus began
+            </p>
+          </div>
         </div>
       </div>
+
       <div className="p-2 mx-auto my-0 w-fit">
         <Button btnLabel={"join the war room"} btnSize={"small"} />
       </div>
