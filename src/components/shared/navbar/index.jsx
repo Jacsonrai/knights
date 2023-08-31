@@ -80,10 +80,33 @@ const NavBar = () => {
       </div>
 
       <div className={`text-white uppercase`}>
+        {open && (
+          <div className=" fixed bg-pale-black flex items-center justify-between p z-[10] top-0 w-full pt-4 pb-4 pl-10 pr-10">
+            <Link to={"/"}>
+              <div className="flex items-center gap-2 text-lg font-medium">
+                <figure>
+                  <img alt="logo" src={logo} className="w-6" />
+                </figure>
+                <p className="uppercase font-[Theblowaregular] text-2xl font-light">
+                  knights
+                </p>
+              </div>
+            </Link>
+            <div
+              className="cursor-pointer md:hidden"
+              onClick={() => setOpen(!open)}
+            >
+              <HamburgerIcon color="white" width={40} height={40} />
+            </div>
+          </div>
+        )}
+
         <ul
-          className={`flex flex-col bg-pale-black ${open && `h-screen`}
+          className={`flex flex-col bg-pale-black ${open && `fixed h-screen`}
          
-          text-center text-xl absolute z-[2] top-[-500px] transition-all ease-in 
+          text-center text-xl ${
+            !open && `absolute`
+          } z-[2] top-[-500px] transition-all ease-in 
           ${open ? `duration-500` : `duration-0`} 
           ${open ? `opacity-100` : `opacity-0`} 
           ${open && `top-[50px]`}
