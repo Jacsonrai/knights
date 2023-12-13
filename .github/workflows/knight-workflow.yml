@@ -27,7 +27,7 @@ jobs:
         with:
           server: ftp.ielnp.com
           username: deploy@ielnp.com
-          password: ${{ secrets.FTP__PASSWORD }}
+          password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./build/
           
 
