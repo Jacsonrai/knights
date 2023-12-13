@@ -1,66 +1,36 @@
-name: Knight
+name: deploy on push main
 on:
   push:
     branches:
       - main
 env:
-  APPLICATION_NAME: Knight
+  APPLICATION_NAME: IEL
   NODE_VERSION: 18.16.0
 jobs:
-  lint:
-    name: Lint
+  build-and-deploy:
+    name: Deloy
     runs-on: ubuntu-latest
-    steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v2
-      - name: setup node enviroment
-        uses: actions/setup-node@v2
-        with:
-          node-version: ${{env.NODE_VERSION}}
-      - name: Install Dependencies
-        run: npm install
-      - name: Run ESLint
-        run: npm run lint
-      - name: run test
-        run: npm test
 
-  unit-testing:
-    name: Unti test
-    needs: lint
-    runs-on: ubuntu-latest
     steps:
-      - name: Checkout Repository
+      - name: Latest code
         uses: actions/checkout@v2
 
-      - name: Set Up Node.js
-        uses: actions/setup-node@v2
+      - name: Run react build script
+        run: |
+          npm install
+          npm run build
+        env:
+          CI: false
+
+      - name: FTP-Deploy-Action
+        uses: SamKirkland/FTP-Deploy-Action@v4.0.0
         with:
-          node-version: ${{env.NODE_VERSION}}
+          server: ftp.ielnp.com
+          username: deploy@ielnp.com
+          password: ${{ secrets.FTP__PASSWORD }}
+          local-dir: ./build/
+          
 
-      - name: Install Dependencies
-        run: npm install
-
-      - name: Run Unit Tests
-        run: npm test
-
-  # build-deploy:
-  #   name: Build and Deploy
-  #   needs: unit-testing
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #     - name: Checkout Repository
-  #       uses: actions/checkout@v2
-  #     - name: Set Up Node.js
-  #       uses: actions/setup-node@v2
-  #       with:
-  #         node-version: ${{env.NODE_VERSION}}
-
-  #     - name: Install Dependencies
-  #       run: npm install
-  #     - name: Run build
-  #       run: npm run build
-  #     - name: Netlify Deploy
-  #       env:
   #         NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
   #         NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
   #       run: netlify deploy --prod
